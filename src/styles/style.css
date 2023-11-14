@@ -244,7 +244,7 @@ footer .ganador {
 	color: var(--text);
 	position: absolute;
 	bottom: 50%;
-	transform: translate(0%, 300%);
+	transform: translate(0%, 100%);
 }
 .atribucion a {
 	text-decoration: none;
@@ -256,26 +256,11 @@ footer .ganador {
 
 @media (min-width: 360px) {
 	footer .ganador {
-		bottom: 4em;
+		bottom: 6em;
 	}
 	footer .reglas {
 		position: absolute;
-		bottom: 0em;
-	}
-}
-@media (min-width: 375px) {
-	footer .ganador {
-		bottom: 4em;
-	}
-}
-@media (min-width: 390px) {
-	footer .ganador {
-		bottom: 4em;
-	}
-}
-@media (min-width: 540px) {
-	footer .ganador {
-		bottom: 4em;
+		bottom: 2em;
 	}
 }
 @media (min-width: 576px) {
