@@ -4,7 +4,7 @@
 	--primary-Scissors-2: hsl(40, 84%, 53%);
 	--primary-Paper-1: hsl(230, 89%, 62%);
 	--primary-Paper-2: hsl(230, 89%, 65%);
-	--primary-Rock-1: hsl(349, 62%, 42%); /* 349, 71%, 52% */
+	--primary-Rock-1: hsl(349, 62%, 42%);
 	--primary-Rock-2: hsl(349, 70%, 56%);
 	--primary-Lizard-1: hsl(261, 73%, 60%);
 	--primary-Lizard-2: hsl(261, 72%, 63%);
@@ -43,14 +43,14 @@ body {
 }
 
 .btn-cerrar:hover svg path {
-	opacity: 1; /* Esto asegurará que el efecto hover se aplique al path cuando el SVG sea el que se está "hovering" */
-	fill: var(--secondary-Dark-Text); /* Esto cambiará el color del path a rojo durante el hover */
+	opacity: 1;
+	fill: var(--secondary-Dark-Text);
 	transition: all 0.3s ease;
 }
 
 .btn-cerrar svg path {
-	fill: #3b4262; /* Color inicial del path */
-	opacity: 0.25; /* Opacidad inicial del path */
+	fill: #3b4262;
+	opacity: 0.25;
 }
 
 h1 {
@@ -234,12 +234,21 @@ footer {
 }
 footer .reglas {
 	position: absolute;
-	/* bottom: 2em; */
 }
 footer .ganador {
 	position: absolute;
 	color: var(--text);
 	bottom: 3em;
+}
+.atribucion {
+	color: var(--text);
+	position: absolute;
+	bottom: 50%;
+	transform: translate(0%, 300%);
+}
+.atribucion a {
+	text-decoration: none;
+	color: var(--text);
 }
 .hidden {
 	display: none;
@@ -442,6 +451,10 @@ footer .ganador {
 	footer .reglas {
 		bottom: 1em;
 	}
+	.atribucion {
+		bottom: 10%;
+		transform: translate(0%, 0%);
+	}
 }
 @media (min-width: 1200px) {
 	main {
@@ -467,6 +480,10 @@ footer .ganador {
 	}
 	footer .reglas {
 		bottom: -13em;
+	}
+	.atribucion {
+		bottom: 0%;
+		transform: translate(0%, 1200%);
 	}
 }
 @media (min-width: 1400px) {
