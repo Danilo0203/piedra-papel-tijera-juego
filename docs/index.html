@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+    rel="stylesheet">
+  <title>Vite App</title>
+  <script type="module" crossorigin src="/juego-ppt/assets/index-73013d96.js"></script>
+  <link rel="stylesheet" href="/juego-ppt/assets/index-26a39fdd.css">
+</head>
+
+<body>
+  <!-- Juego -->
+  <main>
+    <!-- Reglas del juego -->
+    <article class="contenedor-reglas">
+      <section class="modal-rules hidden" id="rules">
+        <h1>Reglas</h1>
+        <div class="img-rules">
+          <img src="assets/img/image-rules.svg" alt="">
+        </div>
+        <div class="btn-cerrar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+            <path fill="#3B4262" fill-rule="evenodd"
+              d="M16.97 0l2.122 2.121-7.425 7.425 7.425 7.425-2.121 2.12-7.425-7.424-7.425 7.425L0 16.97l7.425-7.425L0 2.121 2.121 0l7.425 7.425L16.971 0z"
+              opacity=".25" />
+          </svg>
+        </div>
+      </section>
+    </article>
+    <article class="juego">
+      <!-- Marcador de Puntos -->
+      <section id="tablero">
+        <ul>
+          <li>PIEDRA</li>
+          <li>PAPEL</li>
+          <li>TIJERA</li>
+        </ul>
+        <div class="marcador">
+          <h3>PUNTOS</h3>
+          <p class="puntos">0</p>
+        </div>
+      </section>
+      <!-- Contenedor Items -->
+      <section class="conteiner-items">
+        <!-- Escoger item -->
+        <section class="box-1">
+          <section id="box-items">
+            <div id="triangulo">
+              <img src="assets/img/bg-triangle.svg" alt="triangulo">
+            </div>
+            <!-- <div id="piedra">
+              <div class="fondo fondo-piedra">
+                <img src="assets/img/icon-rock.svg" alt="piedra" class="img-item">
+              </div>
+            </div>
+            <div id="papel">
+              <div class="fondo fondo-papel">
+                <img src="assets/img/icon-paper.svg" alt="papel" class="img-item">
+              </div>
+            </div>
+            <div id="tijera">
+              <div class="fondo fondo-tijera">
+                <img src="assets/img/icon-scissors.svg" alt="tijera" class="img-item">
+              </div>
+            </div> -->
+          </section>
+        </section>
+        <!-- Item Seleccionado -->
+        <section class="box-2 hidden">
+          <section id="box-item-select">
+            <!-- <div class="item-select">
+              <div class="fondo fondo-piedra">
+                <img src="assets/img/icon-piedra.svg" alt="piedra" class="img-item">
+              </div>
+              <p>Escogiste <b>Piedra</b></p>
+            </div> -->
+          </section>
+          <section id="box-item-casa">
+            <!--   <div class="item-select">
+              <div class="fondo fondo-piedra">
+                <img src="assets/img/icon-piedra.svg" alt="piedra" class="img-item">
+              </div>
+              <p>La casa <b>Piedra</b></p>
+            </div> -->
+          </section>
+        </section>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <!-- Ganador -->
+    <div class="ganador hidden">
+      <h2>Perdiste</h2>
+      <button>¡Jugar Otra Vez!</button>
+    </div>
+    <div class="reglas">
+      <button id="btn-reglas">Reglas</button>
+    </div>
+  </footer>
+  
+</body>
+
+</html>
