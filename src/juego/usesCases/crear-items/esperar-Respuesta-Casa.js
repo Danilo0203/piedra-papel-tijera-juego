@@ -1,7 +1,6 @@
 export const esperarRespuestaCasa = (itemCasa) => {
 	const fondo = document.querySelector('#box-item-casa .item-select .fondo');
 	const texto = document.querySelector('#box-item-casa .item-select .textoCasa');
-    console.log(texto);
 	fondo.classList.remove('fondo');
 	fondo.classList.remove(`fondo-${itemCasa}`);
 	fondo.classList.add('espacio');

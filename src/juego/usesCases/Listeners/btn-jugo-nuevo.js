@@ -1,3 +1,4 @@
+import { setJuegoTerminado } from '../..';
 import { plantillaHTML } from '../crear-items/plantilla-items';
 const btnJugarOtraVez = document.querySelector('.ganador button');
 const conetenedorPadre = document.querySelector('.box-1');
@@ -9,5 +10,6 @@ export const btnJuegoNuevo = (items) => {
 		contenedorSeleccionado.classList.add('hidden');
 		ganadorHtml.classList.add('hidden');
 		plantillaHTML(items);
+		setJuegoTerminado(false);
 	});
 };
