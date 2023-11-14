@@ -234,6 +234,7 @@ footer {
 }
 footer .reglas {
 	position: absolute;
+	/* bottom: 2em; */
 }
 footer .ganador {
 	position: absolute;
@@ -242,6 +243,31 @@ footer .ganador {
 }
 .hidden {
 	display: none;
+}
+
+@media (min-width: 360px) {
+	footer .ganador {
+		bottom: 4em;
+	}
+	footer .reglas {
+		position: absolute;
+		bottom: 0em;
+	}
+}
+@media (min-width: 375px) {
+	footer .ganador {
+		bottom: 4em;
+	}
+}
+@media (min-width: 390px) {
+	footer .ganador {
+		bottom: 4em;
+	}
+}
+@media (min-width: 540px) {
+	footer .ganador {
+		bottom: 4em;
+	}
 }
 @media (min-width: 576px) {
 	#tablero {
@@ -323,8 +349,25 @@ footer .ganador {
 		margin: auto;
 		max-width: 90vw;
 	}
+	footer .ganador {
+		bottom: 2em;
+	}
+	footer .reglas {
+		position: absolute;
+		bottom: -3em;
+	}
 }
 @media (min-width: 768px) {
+	main {
+		max-width: 80vw;
+	}
+}
+@media (min-width: 820px) {
+	main {
+		max-width: 80vw;
+	}
+}
+@media (min-width: 912px) {
 	main {
 		max-width: 80vw;
 	}
@@ -393,6 +436,12 @@ footer .ganador {
 		background-color: var(--secondary-Dark-Text);
 		opacity: 0.1;
 	}
+	footer .ganador {
+		bottom: 4em;
+	}
+	footer .reglas {
+		bottom: 1em;
+	}
 }
 @media (min-width: 1200px) {
 	main {
@@ -412,5 +461,19 @@ footer .ganador {
 	}
 	.reglas {
 		bottom: -13.5em;
+	}
+	footer .ganador {
+		bottom: 0em;
+	}
+	footer .reglas {
+		bottom: -13em;
+	}
+}
+@media (min-width: 1400px) {
+	footer .ganador {
+		bottom: 1em;
+	}
+	footer .reglas {
+		bottom: -13em;
 	}
 }
