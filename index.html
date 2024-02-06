@@ -1,84 +1,13 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Juego piedra, papel y tijera</title>
+    <title>Vite + TS</title>
   </head>
-
   <body>
-    <!-- Juego -->
-    <main>
-      <!-- Reglas del juego -->
-      <article class="contenedor-reglas">
-        <section class="modal-rules hidden" id="rules">
-          <h1>Reglas</h1>
-          <div class="img-rules">
-            <img src="assets/img/image-rules.svg" alt="" />
-          </div>
-          <div class="btn-cerrar">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-              <path
-                fill="#3B4262"
-                fill-rule="evenodd"
-                d="M16.97 0l2.122 2.121-7.425 7.425 7.425 7.425-2.121 2.12-7.425-7.424-7.425 7.425L0 16.97l7.425-7.425L0 2.121 2.121 0l7.425 7.425L16.971 0z"
-                opacity=".25"
-              />
-            </svg>
-          </div>
-        </section>
-      </article>
-      <article class="juego">
-        <!-- Marcador de Puntos -->
-        <section id="tablero">
-          <ul>
-            <li>PIEDRA</li>
-            <li>PAPEL</li>
-            <li>TIJERA</li>
-          </ul>
-          <div class="marcador">
-            <h3>PUNTOS</h3>
-            <p class="puntos">0</p>
-          </div>
-        </section>
-        <!-- Contenedor Items -->
-        <section class="conteiner-items">
-          <!-- Escoger item -->
-          <section class="box-1">
-            <section id="box-items">
-              <!--  <div id="triangulo">
-              <img src="assets/img/bg-triangle.svg" alt="triangulo">
-            </div> -->
-            </section>
-          </section>
-          <!-- Item Seleccionado -->
-          <section class="box-2 hidden">
-            <section id="box-item-select"></section>
-            <section id="box-item-casa"></section>
-          </section>
-        </section>
-      </article>
-    </main>
-    <footer>
-      <!-- Ganador -->
-      <div class="ganador hidden">
-        <h2>Perdiste</h2>
-        <button>¡Jugar Otra Vez!</button>
-      </div>
-      <div class="reglas">
-        <button id="btn-reglas">Reglas</button>
-      </div>
-      <div class="atribucion">
-        Desafío por <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Codigo
-        por <a href="#">Danilo Calderón.</a>
-      </div>
-    </footer>
-    <script type="module" src="/main.js"></script>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
