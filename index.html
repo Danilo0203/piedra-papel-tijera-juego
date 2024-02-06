@@ -1,13 +1,66 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet" />
+    <title>Piedra, Papel o Tijera</title>
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+  <body class="flex min-h-dvh flex-grow flex-col bg-gradient-to-t from-gradienteFondo2 to-gradienteFondo px-8 pb-2 pt-6">
+    <main class="flex flex-grow flex-col">
+      <header
+        id="tablero-puntos"
+        class="flex items-center justify-between rounded-md border-2 border-lineaEncabezado py-3 pl-4 pr-3"
+      >
+        <nav>
+          <ul class="font font-bold leading-none text-white">
+            <li>PIEDRA</li>
+            <li>PAPEL</li>
+            <li>TIJERAS</li>
+          </ul>
+        </nav>
+        <div id="puntos" class="flex flex-col items-center rounded-md bg-white px-4 py-2">
+          <span class="text-xs font-semibold tracking-widest text-gradienteFondo">PUNTOS</span>
+          <b class="text-4xl font-bold text-gradienteFondo">12</b>
+        </div>
+      </header>
+      <article id="tablero-juego" class="relative flex-grow">
+        <img
+          src="./public/assets/img/bg-triangle.svg"
+          alt="triangulo-fondo"
+          class="absolute left-1/2 top-1/2 h-40 w-48 -translate-x-2/4 -translate-y-2/4"
+        />
+
+        <div
+          id="icono-papel"
+          class="internoPapel absolute right-1/2 top-0 flex h-32 w-32 -translate-x-[20%] translate-y-1/2 items-center justify-center rounded-full border-[1em] border-gradientePapel2 bg-white bg-gradient-to-t from-gray-50 to-gray-100 p-5"
+        >
+          <img src="assets/img/icon-paper.svg" alt="icon-papel" class="w-10" />
+        </div>
+        <div
+          id="icono-tijera"
+          class="internoTijera fromgr absolute right-0 top-0 flex h-32 w-32 translate-y-1/2 items-center justify-center rounded-full border-[1em] border-gradienteTijeras2 bg-white bg-gradient-to-t from-gray-50 to-gray-100 p-5"
+        >
+          <img src="assets/img/icon-scissors.svg" alt="icon-tijeras" class="w-10" />
+        </div>
+
+        <div
+          id="icono-roca"
+          class="internoRoca absolute bottom-0 right-1/2 z-10 mb-12 flex h-32 w-32 -translate-y-[30%] translate-x-[50%] items-center justify-center rounded-full border-[1em] border-gradienteRoca2 bg-white bg-gradient-to-t from-gray-50 to-gray-100 p-5"
+        >
+          <img src="assets/img/icon-rock.svg" alt="icon-roca" class="w-10" />
+        </div>
+      </article>
+      <section id="reglas" class="flex justify-center pb-4">
+        <p class="rounded-lg border-[1.5px] border-white px-8 py-2 tracking-widest text-white">REGLAS</p>
+      </section>
+      <footer class="flex justify-center">
+        <p class="text-sm text-white">Desafio por FrontMentor, Codigo por Danilo Calderón</p>
+      </footer>
+    </main>
+    <script type="module" src="./main.ts"></script>
   </body>
 </html>
