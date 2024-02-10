@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require("tailwindcss/colors");
+import animations from "@midudev/tailwind-animations";
 
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -48,5 +49,5 @@ export default {
     },
     extend: {},
   },
-  plugins: [require("flowbite/plugin")],
+  plugins: [require("flowbite/plugin"), animations],
 };
