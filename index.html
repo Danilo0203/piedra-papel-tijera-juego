@@ -31,62 +31,60 @@
         </div>
       </header>
       <!-- Tablero del juego -->
-      <article id="tablero-juego" class="relative flex flex-grow flex-col items-center">
+      <article id="tablero-juego" class="relative flex flex-grow flex-col items-center justify-center">
         <!-- Imagen de fondo Triangulo -->
-        <!--! Agregar el flex y quitar hidden -->
-        <img
-          src="./public/assets/img/bg-triangle.svg"
-          alt="triangulo-fondo"
-          class="absolute left-1/2 top-1/2 flex w-[80%] -translate-x-1/2 -translate-y-1/2 sm:w-11/12 lg:w-[40%]"
-        />
-        <div class="absolute top-[45%] flex w-full -translate-y-[100%] justify-between lg:justify-evenly" id="cont-papel-tijera">
+        <!--! Agregar  hidden -->
+        <img src="./public/assets/img/bg-triangle.svg" alt="triangulo-fondo" class="w-[80%] sm:w-11/12 lg:w-[40%]" />
+
+        <div class="juego-derecho absolute left-0 -translate-y-1/3 text-center text-white sm:-translate-y-1/2">
           <!-- Icono de Papel -->
-          <div class="relative text-center">
-            <div
-              id="icono-papel"
-              class="internoPapel left-0 flex h-32 w-32 cursor-pointer items-center justify-center rounded-full border-[1em] border-gradientePapel2 bg-white bg-gradient-to-t from-gray-50 to-gray-100 p-5 hover:animate-pop sm:h-56 sm:w-56 sm:border-[2em] lg:h-40 lg:w-40 lg:border-[1em]"
-            >
-              <img src="assets/img/icon-paper.svg" alt="icon-papel" class="w-10 sm:w-16" />
-            </div>
-            <!-- ! Quitar hidden -->
-            <p class="absolute hidden w-full pt-7 tracking-widest text-white sm:text-2xl">ELEGISTE</p>
+          <div
+            id="icono-papel"
+            class="internoPapel flex h-32 w-32 cursor-pointer items-center justify-center rounded-full border-[1em] border-gradientePapel2 bg-white bg-gradient-to-t from-gray-50 to-gray-100 p-5 hover:animate-pop sm:h-56 sm:w-56 sm:border-[2em] lg:h-40 lg:w-40 lg:border-[1em]"
+          >
+            <img src="assets/img/icon-paper.svg" alt="icon-papel" class="w-10 sm:w-16" />
           </div>
-          <!-- Icono de Tijera y opcion de la casa -->
-          <div class="relative text-center">
-            <!--! Agregar el flex y quitar hidden -->
-            <div class="hidden h-32 w-32 rounded-full bg-[#1b2947] sm:h-56 sm:w-56" id="opcionCasa"></div>
-            <!--! Agregar el flex y quitar hidden -->
-            <div
-              id="icono-tijera"
-              class="internoTijera right-0 flex h-32 w-32 cursor-pointer items-center justify-center rounded-full border-[1em] border-gradienteTijeras2 bg-white bg-gradient-to-t from-gray-50 to-gray-100 p-5 hover:animate-pop sm:h-56 sm:w-56 sm:border-[2em] lg:h-40 lg:w-40 lg:border-[1em]"
-            >
-              <img src="assets/img/icon-scissors.svg" alt="icon-tijeras" class="w-10 sm:w-16" />
-            </div>
-            <!-- ! Quitar hidden -->
-            <p class="absolute hidden w-full pt-7 tracking-widest text-white sm:text-2xl">LA CASA ELIGIO</p>
+          <!-- ! agregar text-transparent -->
+          <p class="pt-7 tracking-widest text-transparent sm:text-2xl lg:pb-7 lg:pt-0 lg:text-xl">ELEGISTE</p>
+        </div>
+        <div class="juego-izquierdo absolute right-0 -translate-y-1/3 text-center text-white sm:-translate-y-1/2">
+          <!-- Icono de casa -->
+          <!--! Agregar el flex y quitar hidden -->
+          <div class="hidden h-32 w-32 rounded-full bg-[#1b2947] sm:h-56 sm:w-56" id="opcionCasa"></div>
+          <!-- Icono de Tijera -->
+          <!--! Agregar el flex y quitar hidden -->
+          <div
+            id="icono-tijera"
+            class="internoTijera flex h-32 w-32 cursor-pointer items-center justify-center rounded-full border-[1em] border-gradienteTijeras2 bg-white bg-gradient-to-t from-gray-50 to-gray-100 p-5 hover:animate-pop sm:h-56 sm:w-56 sm:border-[2em] lg:h-40 lg:w-40 lg:border-[1em]"
+          >
+            <img src="assets/img/icon-scissors.svg" alt="icon-tijeras" class="w-10 sm:w-16" />
           </div>
+          <!-- ! Quitar text-transparent -->
+          <p class="w-full pt-7 tracking-widest text-transparent sm:text-2xl lg:pb-7 lg:pt-0 lg:text-xl">LA CASA ELIGIO</p>
         </div>
         <!-- Icono de roca -->
-        <!-- ! Quitar hidden agregar flex -->
-        <div
-          id="icono-roca"
-          class="internoRoca absolute bottom-1/4 z-10 flex h-32 w-32 cursor-pointer items-center justify-center rounded-full border-[1em] border-gradienteRoca2 bg-white bg-gradient-to-t from-gray-50 to-gray-100 p-5 hover:animate-pop sm:h-56 sm:w-56 sm:border-[2em] md:bottom-[20%] lg:h-40 lg:w-40 lg:border-[1em] 2xl:bottom-1/4"
-        >
-          <img src="assets/img/icon-rock.svg" alt="icon-roca" class="w-10 sm:w-16" />
+        <!-- ! Agregar hidden -->
+        <div class="absolute bottom-2/4 translate-y-[100%] text-center">
+          <div
+            id="icono-roca"
+            class="internoRoca flex h-32 w-32 cursor-pointer items-center justify-center rounded-full border-[1em] border-gradienteRoca2 bg-white bg-gradient-to-t from-gray-50 to-gray-100 p-5 hover:animate-pop sm:h-56 sm:w-56 sm:border-[2em] lg:h-40 lg:w-40 lg:border-[1em]"
+          >
+            <img src="assets/img/icon-rock.svg" alt="icon-roca" class="w-10 sm:w-16" />
+          </div>
         </div>
-      </article>
-      <!-- Ganador o Empate -->
-      <!--! Poner flex para mostrar y quitar hidden -->
-      <section
-        class="absolute bottom-0 left-1/2 hidden w-full -translate-x-1/2 -translate-y-[95%] flex-col items-center gap-5 tracking-widest text-white sm:bottom-10 sm:-translate-y-[80%]"
-      >
-        <h1 class="text-6xl sm:text-8xl">EMPATE</h1>
-        <button
-          class="cursor-pointer rounded-lg border-[1.5px] border-white bg-white px-10 py-2 tracking-widest text-gradienteFondo sm:px-12 sm:py-4 sm:text-3xl"
+        <!-- Ganador o Empate -->
+        <!--! Poner flex para mostrar y quitar hidden -->
+        <section
+          class="absolute hidden w-full translate-y-[90%] flex-col items-center gap-5 tracking-widest text-white lg:translate-y-0"
         >
-          JUGAR OTRA VEZ
-        </button>
-      </section>
+          <h1 class="text-6xl sm:text-8xl lg:text-5xl">EMPATE</h1>
+          <button
+            class="cursor-pointer rounded-lg border-[1.5px] border-white bg-white px-10 py-2 tracking-widest text-gradienteFondo sm:px-12 sm:py-4 sm:text-3xl lg:text-xl"
+          >
+            JUGAR OTRA VEZ
+          </button>
+        </section>
+      </article>
     </main>
     <!-- Reglas -->
     <aside id="reglas" class="flex cursor-pointer justify-center pb-4 lg:ml-auto lg:pb-0">
