@@ -23,4 +23,18 @@
       0px 6px 0px 0px hsl(349, 77%, 33%),
       inset 0px 5px 2px hsl(212, 16%, 81%);
   }
+  @media (min-width: 1024px) {
+    /* Estilo del tablero al mostrar el ganador o empate */
+    .ganador {
+      display: flex;
+      flex-direction: column-reverse;
+      transform: translateY(0%) !important;
+    }
+    .juego-derecho {
+      transform: translate(90%, -33.33%) !important;
+    }
+    .juego-izquierdo {
+      transform: translate(-90%, -33.33%) !important;
+    }
+  }
 }
