@@ -28,4 +28,4 @@ const instanceOptions: InstanceOptions = {
 
 const modal: ModalInterface = new Modal($modalElement, modalOptions, instanceOptions);
 
-modal.show();
+modal;

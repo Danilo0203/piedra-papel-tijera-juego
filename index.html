@@ -39,9 +39,9 @@
           alt="triangulo-fondo"
           class="absolute left-1/2 top-1/2 flex w-[80%] -translate-x-1/2 -translate-y-1/2 sm:w-11/12 lg:w-[40%]"
         />
-        <div class="absolute top-[45%] flex w-full -translate-y-[100%] justify-between lg:justify-evenly">
+        <div class="absolute top-[45%] flex w-full -translate-y-[100%] justify-between lg:justify-evenly" id="cont-papel-tijera">
+          <!-- Icono de Papel -->
           <div class="relative text-center">
-            <!-- Icono de Papel -->
             <div
               id="icono-papel"
               class="internoPapel left-0 flex h-32 w-32 cursor-pointer items-center justify-center rounded-full border-[1em] border-gradientePapel2 bg-white bg-gradient-to-t from-gray-50 to-gray-100 p-5 hover:animate-pop sm:h-56 sm:w-56 sm:border-[2em] lg:h-40 lg:w-40 lg:border-[1em]"
@@ -51,8 +51,8 @@
             <!-- ! Quitar hidden -->
             <p class="absolute hidden w-full pt-7 tracking-widest text-white sm:text-2xl">ELEGISTE</p>
           </div>
+          <!-- Icono de Tijera y opcion de la casa -->
           <div class="relative text-center">
-            <!-- Icono de Tijera -->
             <!--! Agregar el flex y quitar hidden -->
             <div class="hidden h-32 w-32 rounded-full bg-[#1b2947] sm:h-56 sm:w-56" id="opcionCasa"></div>
             <!--! Agregar el flex y quitar hidden -->
@@ -103,10 +103,10 @@
     <footer class="flex flex-wrap items-center justify-center gap-2 md:gap-5">
       <p class="text-sm text-white sm:text-xl lg:text-lg">Desafio por FrontMentor, Codigo por Danilo Calderón</p>
       <div class="flex gap-4">
-        <a href="https://github.com/Danilo0203/piedra-papel-tijera-juego"
+        <a href="https://github.com/Danilo0203/piedra-papel-tijera-juego" target="_blank"
           ><img src="assets/img/github.png" alt="logo github" class="w-5 hover:animate-pulsar md:w-6"
         /></a>
-        <a href="https://www.linkedin.com/in/danilo-calderon/"
+        <a href="https://www.linkedin.com/in/danilo-calderon/" target="_blank"
           ><img src="assets/img/logotipo-de-linkedin.png" alt="logo linkedin" class="w-5 hover:animate-pulsar md:w-6"
         /></a>
       </div>
@@ -115,7 +115,7 @@
     <div
       id="extralarge-modal"
       tabindex="-1"
-      class="fixed left-0 right-0 top-0 z-50 hidden h-[calc(100%-1rem)] min-h-full w-full overflow-y-auto md:inset-0 lg:min-h-0 lg:overflow-x-hidden lg:p-4"
+      class="fixed  left-0 right-0 top-0 z-50 hidden h-[calc(100%-1rem)] min-h-full w-full overflow-y-auto md:inset-0 lg:min-h-0 lg:overflow-x-hidden lg:p-4"
     >
       <div class="relative flex min-h-full w-full lg:max-h-full lg:min-h-0 lg:max-w-md">
         <!-- Modal content -->
