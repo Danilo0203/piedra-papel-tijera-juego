@@ -10,7 +10,7 @@ export const reiniciar = () => {
   const jugadores: string[] = ["jugador", "casa"];
   const tablero = elemtId("tablero-juego");
   let itemCasa = itemAleatorio(items);
-  // console.log(`reiniciar: ${itemCasa}`);
+  console.log(`reiniciar: ${itemCasa}`);
   tableroRender(tablero);
   clickItems(items, (itemClick: string) => {
     setTimeout(() => {

@@ -1,15 +1,15 @@
 import { elemtId } from "../click-items/id-items";
 
-let puntos: any = 0;
+let puntos: number = 0;
 export const ganadorJugador = (jugadores: string[], itemJugador: string, itemCasa: string) => {
   let [jugador, casa] = jugadores;
   let tableroPuntos = elemtId("puntos");
   let ganadorTexto = elemtId("ganador-texto");
   jugador = itemJugador;
   casa = itemCasa;
-  if (jugador === casa) return (ganadorTexto.innerText = "EMPATE");
-
-  if (
+  if (jugador === casa) {
+    ganadorTexto.innerText = "EMPATE";
+  } else if (
     (jugador === "roca" && casa === "tijera") ||
     (jugador === "tijera" && casa === "papel") ||
     (jugador === "papel" && casa === "roca")
@@ -17,9 +17,13 @@ export const ganadorJugador = (jugadores: string[], itemJugador: string, itemCas
     ++puntos;
     ganadorTexto.innerText = "GANASTE";
   } else {
-    --puntos;
-    if (puntos < 0) return;
+    if (puntos > 0) {
+      // Solo resta puntos si hay puntos para restar
+      --puntos;
+    }
     ganadorTexto.innerText = "PERDISTE";
   }
-  tableroPuntos.innerHTML = puntos;
+  // Mostrar los puntos asegurándose de que nunca sean negativos
+  puntos = Math.max(puntos, 0);
+  tableroPuntos.innerHTML = puntos.toString();
 };
