@@ -10,7 +10,7 @@ import "./modal/modal";
   let itemCasa = itemAleatorio(items);
   clickItems(items, (itemClick: string) => {
     setTimeout(() => {
-      ganadorJugador(jugadores, itemClick, itemCasa, items);
+      ganadorJugador(jugadores, itemClick, itemCasa);
     }, 1000);
     ganadorTablero(itemClick, itemCasa, items);
   });

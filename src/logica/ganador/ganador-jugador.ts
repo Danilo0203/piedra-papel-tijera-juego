@@ -1,6 +1,6 @@
 import { elemtId } from "../click-items/id-items";
 
-export const ganadorJugador = (jugadores: string[], itemJugador: string, itemCasa: string, items: string[]) => {
+export const ganadorJugador = (jugadores: string[], itemJugador: string, itemCasa: string) => {
   let [jugador, casa] = jugadores;
   let tableroPuntos = elemtId("puntos");
   let ganadorTexto = elemtId("ganador-texto");
