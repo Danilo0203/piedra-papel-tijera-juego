@@ -1,12 +1,12 @@
 import { elemtId } from "../click-items/id-items";
 
+let puntos: any = 0;
 export const ganadorJugador = (jugadores: string[], itemJugador: string, itemCasa: string) => {
   let [jugador, casa] = jugadores;
   let tableroPuntos = elemtId("puntos");
   let ganadorTexto = elemtId("ganador-texto");
   jugador = itemJugador;
   casa = itemCasa;
-  let puntos: any = 0;
   if (jugador === casa) return (ganadorTexto.innerText = "EMPATE");
 
   if (
@@ -15,13 +15,11 @@ export const ganadorJugador = (jugadores: string[], itemJugador: string, itemCas
     (jugador === "papel" && casa === "roca")
   ) {
     ++puntos;
-    tableroPuntos.innerHTML = puntos;
     ganadorTexto.innerText = "GANASTE";
   } else {
     --puntos;
-    ganadorTexto.innerText = "PERDISTE";
-
     if (puntos < 0) return;
-    tableroPuntos.innerHTML = puntos;
+    ganadorTexto.innerText = "PERDISTE";
   }
+  tableroPuntos.innerHTML = puntos;
 };

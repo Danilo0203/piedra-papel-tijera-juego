@@ -1,3 +1,4 @@
+import { btnNuevoJuego } from "../tablero/btn-Nuevo-Juego";
 import { accionesItems } from "./acciones-items";
 import { elemtId } from "./id-items";
 
@@ -24,6 +25,7 @@ export const ocultarItems = (items: string[]) => {
     accionesItems("añadir", "hidden", opcionCasa);
     accionesItems("eliminar", "hidden", mensaje);
     accionesItems("añadir", "flex", mensaje);
+    btnNuevoJuego(items);
   }, 1000);
   items.forEach((item) => {
     let pick = <HTMLButtonElement>elemtId(`icono-${item}`);
