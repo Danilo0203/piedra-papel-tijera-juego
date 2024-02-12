@@ -7,7 +7,7 @@ export default {
   theme: {
     colors: {
       gradienteTijeras: "hsl(39, 89%, 49%)",
-      gradienteTijeras2: "hsl(40, 84%, 53%)",
+      gradienteTijera2: "hsl(40, 84%, 53%)",
       gradientePapel: "hsl(230, 89%, 62%)",
       gradientePapel2: "hsl(230, 89%, 65%)",
       gradienteRoca: "hsl(349, 71%, 52%)",
